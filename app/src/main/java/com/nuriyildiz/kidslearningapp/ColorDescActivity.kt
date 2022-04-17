@@ -12,6 +12,7 @@ class ColorDescActivity : AppCompatActivity() {
         val intent=intent
         var colorName = intent.getStringExtra("colorName")
         textView2.text = colorName
+        /*
         when(colorName){
             "Siyah" -> textView2.text = "blaack"
 
@@ -19,5 +20,10 @@ class ColorDescActivity : AppCompatActivity() {
 
             else -> textView2.text="Çalışmadı"
         }
+         */
+        var imgs = listOf<Int>(R.drawable.yellow1,R.drawable.yellow1,R.drawable.yellow1)
+        var adapter = Adapter(imgs, this)
+        pager.adapter = adapter
+
     }
 }
