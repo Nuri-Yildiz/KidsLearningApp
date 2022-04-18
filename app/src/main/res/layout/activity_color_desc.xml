@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#770B0B"
+    android:background="#EAC0C0"
     tools:context=".ColorDescActivity">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Renk İsmi"
-        android:textColor="#FFC40C"
+        android:textColor="#4C4B47"
         android:textSize="50sp"
         android:paddingVertical="12dp"
         app:layout_constraintLeft_toLeftOf="parent"

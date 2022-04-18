@@ -12,16 +12,24 @@ class ColorDescActivity : AppCompatActivity() {
         val intent=intent
         var colorName = intent.getStringExtra("colorName")
         textView2.text = colorName
-        /*
-        when(colorName){
-            "Siyah" -> textView2.text = "blaack"
+        var imgs = listOf<Int>();
 
-            "Sarı" -> textView2.text="Yellow"
+        when(colorName){
+            "Siyah" -> imgs = listOf<Int>(R.drawable.black1,R.drawable.black2,R.drawable.black3)
+
+            "Mavi" -> imgs = listOf<Int>(R.drawable.yellow1,R.drawable.yellow1,R.drawable.yellow1)
+
+            "Sarı" -> imgs = listOf<Int>(R.drawable.yellow1,R.drawable.yellow2,R.drawable.yellow3)
+
+            "Kırmızı" -> imgs = listOf<Int>(R.drawable.yellow1,R.drawable.yellow1,R.drawable.yellow1)
+
+            "Yeşil" -> imgs = listOf<Int>(R.drawable.yellow1,R.drawable.yellow1,R.drawable.yellow1)
+
+            "Beyaz" -> imgs = listOf<Int>(R.drawable.yellow1,R.drawable.yellow1,R.drawable.yellow1)
 
             else -> textView2.text="Çalışmadı"
         }
-         */
-        var imgs = listOf<Int>(R.drawable.yellow1,R.drawable.yellow1,R.drawable.yellow1)
+
         var adapter = Adapter(imgs, this)
         pager.adapter = adapter
 

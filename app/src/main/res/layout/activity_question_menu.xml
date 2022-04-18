@@ -57,7 +57,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/fruitsandvegetables" />
+        app:srcCompat="@drawable/coloricon" />
 
     <ImageView
         android:id="@+id/imageView7"

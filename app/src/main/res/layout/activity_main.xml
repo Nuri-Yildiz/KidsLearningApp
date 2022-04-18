@@ -57,7 +57,7 @@
         app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:srcCompat="@drawable/fruitsandvegetables" />
+        app:srcCompat="@drawable/coloricon" />
 
     <ImageView
         android:id="@+id/imageView6"
