@@ -14,35 +14,41 @@ class ColorActivity : AppCompatActivity() {
         val intent = Intent(applicationContext,ColorDescActivity::class.java)
         intent.putExtra("colorName","Siyah")
         startActivity(intent)
+        finish()
     }
 
     fun goToBlue(view: View){
         val intent = Intent(applicationContext,ColorDescActivity::class.java)
         intent.putExtra("colorName","Mavi")
         startActivity(intent)
+        finish()
     }
 
     fun goToYellow(view: View){
         val intent = Intent(applicationContext,ColorDescActivity::class.java)
         intent.putExtra("colorName","Sarı")
         startActivity(intent)
+        finish()
     }
 
     fun goToRed(view: View){
         val intent = Intent(applicationContext,ColorDescActivity::class.java)
         intent.putExtra("colorName","Kırmızı")
         startActivity(intent)
+        finish()
     }
 
     fun goToGreen(view: View){
         val intent = Intent(applicationContext,ColorDescActivity::class.java)
         intent.putExtra("colorName","Yeşil")
         startActivity(intent)
+        finish()
     }
 
     fun goToWhite(view: View){
         val intent = Intent(applicationContext,ColorDescActivity::class.java)
         intent.putExtra("colorName","Beyaz")
         startActivity(intent)
+        finish()
     }
 }

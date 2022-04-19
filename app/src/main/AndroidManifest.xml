@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsLearningApp">
         <activity
+            android:name=".NumbersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlphabetActivity"
+            android:exported="false" />
+        <activity
             android:name=".ColorDescActivity"
             android:exported="false" />
         <activity
