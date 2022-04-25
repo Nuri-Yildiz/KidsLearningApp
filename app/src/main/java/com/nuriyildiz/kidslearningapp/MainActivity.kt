@@ -18,6 +18,10 @@ class MainActivity : AppCompatActivity() {
         val intent2 = Intent(applicationContext,ColorActivity::class.java)
         startActivity(intent2)
     }
+    fun goToNumbers(view: View){
+        val intent = Intent(applicationContext,NumbersActivity::class.java)
+        startActivity(intent)
+    }
 
 
 }

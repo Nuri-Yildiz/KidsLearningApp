@@ -1,7 +1,9 @@
 package com.nuriyildiz.kidslearningapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 
 class NumbersActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

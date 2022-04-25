@@ -1,9 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".NumbersActivity">
+    android:layout_width="409dp"
+    android:layout_height="601dp"
+    android:background="#FF0000"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".NumbersActivity">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="174dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="52dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:srcCompat="@drawable/number3"
+            tools:layout_editor_absoluteX="-2dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="171dp"
+            android:layout_height="204dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/number1"
+            tools:layout_editor_absoluteX="4dp" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="162dp"
+            android:layout_height="220dp"
+            android:layout_marginStart="64dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:srcCompat="@drawable/number2"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="162dp"
+            android:layout_height="181dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="56dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView10"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:srcCompat="@drawable/number4" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="174dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10"
+            app:srcCompat="@drawable/number5"
+            tools:layout_editor_absoluteX="-2dp" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="159dp"
+            android:layout_height="212dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:srcCompat="@drawable/number6" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="177dp"
+            android:layout_height="244dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12"
+            app:srcCompat="@drawable/number7"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="170dp"
+            android:layout_height="203dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13"
+            app:srcCompat="@drawable/number8" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="172dp"
+            android:layout_height="235dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14"
+            app:srcCompat="@drawable/number9"
+            tools:layout_editor_absoluteX="2dp" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="166dp"
+            android:layout_height="216dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView16"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:srcCompat="@drawable/number10" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
