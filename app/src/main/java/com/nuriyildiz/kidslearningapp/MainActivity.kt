@@ -22,6 +22,14 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(applicationContext,NumbersActivity::class.java)
         startActivity(intent)
     }
+    fun goToGame1(view: View){
+        val intent = Intent(applicationContext,MemoryGame::class.java)
+        startActivity(intent)
+    }
+    fun goToGame2(view: View){
+        val intent = Intent(applicationContext,CatchTheMole::class.java)
+        startActivity(intent)
+    }
 
 
 }

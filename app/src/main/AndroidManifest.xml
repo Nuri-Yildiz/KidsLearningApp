@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsLearningApp">
         <activity
+            android:name=".GameStartMenu"
+            android:exported="false" />
+        <activity
+            android:name=".CatchTheMole"
+            android:exported="false" />
+        <activity
+            android:name=".MemoryGame"
+            android:exported="false" />
+        <activity
             android:name=".NumbersActivity"
             android:exported="false" />
         <activity
