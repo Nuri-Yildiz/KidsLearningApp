@@ -11,10 +11,13 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="40dp"
         android:backgroundTint="#F40707"
+        android:onClick="goToGame"
         android:text="Oyunu Başlat"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="189dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3" />
 
     <Button
         android:id="@+id/button3"
@@ -22,6 +25,8 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#9C8181"
         android:text="En Yüksek Skorlar"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="277dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

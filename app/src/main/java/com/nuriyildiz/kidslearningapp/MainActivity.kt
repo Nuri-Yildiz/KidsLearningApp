@@ -23,11 +23,13 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
     fun goToGame1(view: View){
-        val intent = Intent(applicationContext,MemoryGame::class.java)
+        val intent = Intent(applicationContext,GameStartMenu::class.java)
+        intent.putExtra("gameName","MemoryGame")
         startActivity(intent)
     }
     fun goToGame2(view: View){
-        val intent = Intent(applicationContext,CatchTheMole::class.java)
+        val intent = Intent(applicationContext,GameStartMenu::class.java)
+        intent.putExtra("gameName","CatchTheMole")
         startActivity(intent)
     }
 

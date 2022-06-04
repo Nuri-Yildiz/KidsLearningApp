@@ -27,6 +27,7 @@
             android:id="@+id/imageView5"
             android:layout_width="171dp"
             android:layout_height="204dp"
+            android:onClick="openDescribe1"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/number1"
             tools:layout_editor_absoluteX="4dp" />

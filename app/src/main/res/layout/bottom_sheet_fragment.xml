@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="318dp"
+        android:layout_margin="2dp"
+        android:background="#A68F17">
+
+        <ImageView
+            android:id="@+id/bfImage"
+            android:layout_width="161dp"
+            android:layout_height="154dp"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="76dp"
+            android:src="@drawable/photo"
+            app:layout_constraintBottom_toTopOf="@+id/bfBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.75" />
+
+        <TextView
+            android:id="@+id/bfText"
+            android:layout_width="173dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="44dp"
+            android:text="1 adet kalem"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/bfImage"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Button
+            android:id="@+id/bfBtn"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:text="Tamam"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/bfVoiceButton"
+            android:layout_width="104dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="32dp"
+
+            android:text="Ses Dinle"
+            app:layout_constraintBottom_toTopOf="@+id/bfBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bfText"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

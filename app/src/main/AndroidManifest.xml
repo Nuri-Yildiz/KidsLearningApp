@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsLearningApp">
         <activity
+            android:name=".PuzzleGame"
+            android:exported="false" />
+        <activity
+            android:name=".PuzzleGameMain"
+            android:exported="false" />
+        <activity
             android:name=".GameStartMenu"
             android:exported="false" />
         <activity

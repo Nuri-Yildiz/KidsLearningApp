@@ -33,7 +33,6 @@ class MemoryGame : AppCompatActivity() {
         buttons.forEachIndexed { index, button ->
             button.setOnClickListener {
                 Log.i(TAG, "butona tıklandı")
-
                 updateModels(index)
                 updateViews()
             }
