@@ -1,7 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".AlphabetActivity"/>
+    android:layout_width="409dp"
+    android:layout_height="601dp"
+    android:background="#00962A"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".AlphabetActivity">
+
+        <ImageView
+            android:id="@+id/imageViewAlphabet1"
+            android:layout_width="153dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="76dp"
+            android:onClick="openLetter1"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewAlphabet2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/a" />
+
+        <ImageView
+            android:id="@+id/imageViewAlphabet2"
+            android:layout_width="145dp"
+            android:layout_height="155dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:onClick="openDescribe1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/b" />
+
+        <ImageView
+            android:id="@+id/imageViewAlphabet3"
+            android:layout_width="146dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewAlphabet1"
+            app:srcCompat="@drawable/c" />
+
+        <ImageView
+            android:id="@+id/imageViewAlphabet4"
+            android:layout_width="146dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewAlphabet3"
+            app:srcCompat="@drawable/d" />
+
+        <ImageView
+            android:id="@+id/imageViewAlphabet5"
+            android:layout_width="146dp"
+            android:layout_height="162dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageViewAlphabet4"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewAlphabet6"
+            app:srcCompat="@drawable/e" />
+
+        <ImageView
+            android:id="@+id/imageViewAlphabet6"
+            android:layout_width="146dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintStart_toEndOf="@+id/imageViewAlphabet3"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewAlphabet2"
+            app:srcCompat="@drawable/ce" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

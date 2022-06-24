@@ -14,6 +14,10 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(applicationContext,QuestionMenuActivity::class.java)
         startActivity(intent)
     }
+    fun goToAlphabet(view: View){
+        val intent = Intent(applicationContext,AlphabetActivity::class.java)
+        startActivity(intent)
+    }
     fun goToColors(view: View){
         val intent2 = Intent(applicationContext,ColorActivity::class.java)
         startActivity(intent2)
@@ -30,6 +34,10 @@ class MainActivity : AppCompatActivity() {
     fun goToGame2(view: View){
         val intent = Intent(applicationContext,GameStartMenu::class.java)
         intent.putExtra("gameName","CatchTheMole")
+        startActivity(intent)
+    }
+    fun goToColorTest(view: View){
+        val intent = Intent(applicationContext,ColorTestActivity::class.java)
         startActivity(intent)
     }
 

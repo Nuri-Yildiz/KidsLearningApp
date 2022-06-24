@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsLearningApp">
         <activity
+            android:name=".Yellow"
+            android:exported="false" />
+        <activity
+            android:name=".White"
+            android:exported="false" />
+        <activity
+            android:name=".Black"
+            android:exported="false" />
+        <activity
+            android:name=".Red"
+            android:exported="false" />
+        <activity
+            android:name=".Green"
+            android:exported="false" />
+        <activity
+            android:name=".Blue"
+            android:exported="false" />
+        <activity
+            android:name=".ColorTestActivity"
+            android:exported="false" />
+        <activity
             android:name=".PuzzleGame"
             android:exported="false" />
         <activity
