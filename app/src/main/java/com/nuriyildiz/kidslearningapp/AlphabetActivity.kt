@@ -15,7 +15,7 @@ class AlphabetActivity : AppCompatActivity() {
         setContentView(R.layout.activity_alphabet)
     }
 
-    fun openLetter1(view: View){
+    fun openLetterA(view: View){
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment2, null)
         view.bfImage.setImageResource(R.drawable.blue1)
@@ -27,17 +27,19 @@ class AlphabetActivity : AppCompatActivity() {
         dialog.setContentView(view)
         dialog.show()
     }
-    fun openLetter2(view: View){
+    fun openLetterB(view: View){
         val dialog = BottomSheetDialog(this)
-        val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
-        view.bfImage.setImageResource(R.drawable.blue1)
-        view.bfImage2.setImageResource(R.drawable.lion)
+        val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment2, null)
+        view.bfImage.setImageResource(R.drawable.fish)
+        view.bfText.text = "Balığın B'si"
+        view.bfImage2.setImageResource(R.drawable.ic_lion)
         view.bfText2.text = "Aslanın A'sı"
-        view.bfText.text = "Arabanın A'sı"
+        view.bfText3.text = "Ağacın A'sı"
+        view.bfImage3.setImageResource(R.drawable.green1)
         dialog.setContentView(view)
         dialog.show()
     }
-    fun openLetter3(view: View){
+    fun openLetterC(view: View){
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
@@ -45,7 +47,16 @@ class AlphabetActivity : AppCompatActivity() {
         dialog.setContentView(view)
         dialog.show()
     }
-    fun openLetter4(view: View){
+    fun openLetterCc(view: View){
+
+        val dialog = BottomSheetDialog(this)
+        val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
+        view.bfImage.setImageResource(R.drawable.blue1)
+        dialog.setContentView(view)
+        dialog.show()
+
+    }
+    fun openLetterD(view: View){
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
@@ -53,7 +64,7 @@ class AlphabetActivity : AppCompatActivity() {
         dialog.setContentView(view)
         dialog.show()
     }
-    fun openLetter5(view: View){
+    fun openLetterE(view: View){
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
@@ -61,7 +72,7 @@ class AlphabetActivity : AppCompatActivity() {
         dialog.setContentView(view)
         dialog.show()
     }
-    fun openLetter6(view: View){
+    fun openLetterF(view: View){
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
@@ -69,7 +80,7 @@ class AlphabetActivity : AppCompatActivity() {
         dialog.setContentView(view)
         dialog.show()
     }
-    fun openLetter7(view: View){
+    fun openLetterG(view: View){
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
@@ -77,7 +88,7 @@ class AlphabetActivity : AppCompatActivity() {
         dialog.setContentView(view)
         dialog.show()
     }
-    fun openLetter8(view: View){
+    fun openLetterGg(view: View){
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
@@ -85,7 +96,7 @@ class AlphabetActivity : AppCompatActivity() {
         dialog.setContentView(view)
         dialog.show()
     }
-    fun openDescribe9(view: View){
+    fun openDescribeH(view: View){
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
@@ -93,7 +104,15 @@ class AlphabetActivity : AppCompatActivity() {
         dialog.setContentView(view)
         dialog.show()
     }
-    fun openLetter10(view: View){
+    fun openLetterI(view: View){
+
+        val dialog = BottomSheetDialog(this)
+        val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
+        view.bfImage.setImageResource(R.drawable.blue1)
+        dialog.setContentView(view)
+        dialog.show()
+    }
+    fun openLetterIi(view: View){
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)

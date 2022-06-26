@@ -48,7 +48,7 @@ class Red : AppCompatActivity() {
 
         // Update game based on user's choice
         fun onCorrect(answer: String, classNum: Int){
-            if (colors[count] == answer){
+            if (colors?.get(count) ?:  String == answer){
                 val intent = Intent(this@Red, activitiesArray[classNum])
                 if (colors != null) {
                     if((count+1) == colors.size){

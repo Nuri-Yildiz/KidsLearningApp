@@ -23,19 +23,20 @@
         android:textStyle="bold"
         android:layout_marginTop="15dp"
         android:textColor="#FFFFFF"/>
+
     <TextView
+        android:id="@+id/scoreText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scoreText"
-        android:text="0"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:textAlignment="textEnd"
         android:layout_marginEnd="5dp"
-        android:textSize="32sp"
         android:fontFamily="casual"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"/>
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/greenBtn"
