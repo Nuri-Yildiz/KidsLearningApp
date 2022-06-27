@@ -38,6 +38,7 @@ class ColorActivity : AppCompatActivity() {
         finish()
     }
 
+
     fun goToGreen(view: View){
         val intent = Intent(applicationContext,ColorDescActivity::class.java)
         intent.putExtra("colorName","Yeşil")

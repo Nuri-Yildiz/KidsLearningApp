@@ -1,98 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".White"
-    android:background="@color/white">
-
-    <TextView
-        android:text="Simon Says"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/titleText"
-        android:textSize="40sp"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="casual"
-        android:textStyle="bold"
-        android:layout_marginTop="15dp"
-        android:textColor="#FFFFFF"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/scoreText"
-        android:text="0"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:textAlignment="textEnd"
-        android:layout_marginEnd="5dp"
-        android:textSize="32sp"
-        android:fontFamily="casual"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"/>
+    android:background="#E1D9D1"
+    tools:context=".White">
 
     <Button
         android:id="@+id/greenBtn"
-        android:layout_width="330dp"
-        android:layout_height="80dp"
-        android:textSize="40sp"
-        android:layout_below="@id/titleText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:background="#00FF00"
-        android:textColor="#FFFFFF"/>
+        android:layout_width="145dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="36dp"
+        android:background="#454B1B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blueBtn"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/yellowBtn"
-        android:layout_width="330dp"
-        android:layout_height="80dp"
-        android:textSize="40sp"
-        android:layout_below="@id/greenBtn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:background="#FFFF00"
-        android:textColor="#FFFFFF"/>
-
-    <Button
-        android:id="@+id/blueBtn"
-        android:layout_width="330dp"
-        android:layout_height="80dp"
-        android:textSize="40sp"
-        android:layout_below="@id/yellowBtn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:background="#0000FF"
-        android:textColor="#FFFFFF"/>
-
-    <Button
-        android:id="@+id/redBtn"
-        android:layout_width="330dp"
-        android:layout_height="80dp"
-        android:textSize="40sp"
-        android:layout_below="@id/blueBtn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:background="#F44336"
-        android:textColor="#FFFFFF"/>
+        android:id="@+id/whiteBtn"
+        android:layout_width="145dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/greenBtn"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redBtn"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/restartBtn"
-        android:text="Restart"
-        android:layout_width="330dp"
-        android:layout_height="80dp"
-        android:textSize="40sp"
-        android:layout_below="@id/yellowBtn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_width="242dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
         android:background="#6C0A7E"
+        android:text="Tekrar Oyna"
         android:textColor="#FFFFFF"
-        android:visibility="invisible"/>
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whiteBtn"
+        app:layout_constraintVertical_bias="0.975" />
 
+    <Button
+        android:id="@+id/blueBtn"
+        android:layout_width="145dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="36dp"
+        android:background="#0000FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yellowBtn" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/redBtn"
+        android:layout_width="145dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:background="#F44336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blackBtn" />
+
+    <Button
+        android:id="@+id/yellowBtn"
+        android:layout_width="145dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="36dp"
+        android:background="#00FF00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/blackBtn"
+        android:layout_width="145dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/yellowBtn"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="345dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="32dp"
+        android:text="Renk : "
+        android:textColor="#F3EBEB"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="122dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/restartBtn"
+        app:layout_constraintTop_toBottomOf="@+id/greenBtn"
+        app:layout_constraintVertical_bias="0.045" />
+</androidx.constraintlayout.widget.ConstraintLayout>

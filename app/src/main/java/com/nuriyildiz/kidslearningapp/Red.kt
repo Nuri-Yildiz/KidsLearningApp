@@ -12,14 +12,16 @@ class Red : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_red)
 
-        val title = findViewById<TextView>(R.id.titleText)
+        val title = findViewById<TextView>(R.id.textView)
         val scoreText = findViewById<TextView>(R.id.scoreText)
         val green = findViewById<Button>(R.id.greenBtn)
+        val white = findViewById<Button>(R.id.whiteBtn)
         val yellow = findViewById<Button>(R.id.yellowBtn)
         val blue = findViewById<Button>(R.id.blueBtn)
+        val black = findViewById<Button>(R.id.blackBtn)
         val red = findViewById<Button>(R.id.redBtn)
         val restart = findViewById<Button>(R.id.restartBtn)
-        val activitiesArray = arrayOf(Green::class.java, Yellow::class.java, Blue::class.java, Red::class.java)
+        val activitiesArray = arrayOf(Green::class.java, Yellow::class.java, Blue::class.java, Red::class.java, White::class.java, Black::class.java)
 
         // Get count, index and color from intent
         var score = intent.getIntExtra("score", -2)
@@ -29,10 +31,10 @@ class Red : AppCompatActivity() {
         scoreText.text = score.toString()
 
         if(score != count){
-            val temp = "Color: " + (count + 1)
+            val temp = "Renk: " + (count + 1) + ". Renk "
             title.text = temp
         } else {
-            val temp = "Color " + (colors?.get(count) ?: String)
+            val temp = "Renk " + (colors?.get(count) ?: String)
             title.text = temp
         }
 
@@ -45,14 +47,12 @@ class Red : AppCompatActivity() {
             yellow.text = newTitle
             green.text = newTitle
         }
-
-        // Update game based on user's choice
         fun onCorrect(answer: String, classNum: Int){
             if (colors?.get(count) ?:  String == answer){
                 val intent = Intent(this@Red, activitiesArray[classNum])
                 if (colors != null) {
                     if((count+1) == colors.size){
-                        gameOver("YOU WIN!")
+                        gameOver("Kazandın")
                     } else {
                         if (count == score) {
                             count = -1
@@ -67,22 +67,28 @@ class Red : AppCompatActivity() {
                 }
             }
             else if(restart.visibility != 0){
-                gameOver("gameOver")
+                gameOver("Oyun Bitti")
             }
         }
 
         // On click listeners for each button
         green.setOnClickListener {
-            onCorrect("Green", 0)
+            onCorrect("Yeşil", 0)
         }
         yellow.setOnClickListener {
-            onCorrect("Yellow", 1)
+            onCorrect("Sarı", 1)
         }
         blue.setOnClickListener {
-            onCorrect("Blue", 2)
+            onCorrect("Mavi", 2)
         }
         red.setOnClickListener {
-            onCorrect("Red", 3)
+            onCorrect("Kırmızı", 3)
+        }
+        black.setOnClickListener {
+            onCorrect("Siyah", 4)
+        }
+        white.setOnClickListener {
+            onCorrect("Beyaz", 5)
         }
         restart.setOnClickListener {
             val intent = Intent(this@Red, MainActivity::class.java)

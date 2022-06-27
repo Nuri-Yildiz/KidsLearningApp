@@ -17,6 +17,8 @@ class NumbersActivity : AppCompatActivity() {
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
+        view.bfImage.setImageResource(R.drawable.hand1)
+        view.bfText.text = "Bir"
         dialog.setContentView(view)
         dialog.show()
     }
@@ -24,6 +26,8 @@ class NumbersActivity : AppCompatActivity() {
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
+        view.bfImage.setImageResource(R.drawable.hand2)
+        view.bfText.text = "İki"
         dialog.setContentView(view)
         dialog.show()
     }
@@ -31,6 +35,8 @@ class NumbersActivity : AppCompatActivity() {
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
+        view.bfImage.setImageResource(R.drawable.hand3)
+        view.bfText.text = "Üç"
         dialog.setContentView(view)
         dialog.show()
     }
@@ -38,6 +44,8 @@ class NumbersActivity : AppCompatActivity() {
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
+        view.bfImage.setImageResource(R.drawable.hand4)
+        view.bfText.text = "Dört"
         dialog.setContentView(view)
         dialog.show()
     }
@@ -45,6 +53,8 @@ class NumbersActivity : AppCompatActivity() {
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
+        view.bfImage.setImageResource(R.drawable.hand5)
+        view.bfText.text = "Beş"
         dialog.setContentView(view)
         dialog.show()
     }
@@ -52,6 +62,8 @@ class NumbersActivity : AppCompatActivity() {
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
+        view.bfImage.setImageResource(R.drawable.hand6)
+        view.bfText.text = "Altı"
         dialog.setContentView(view)
         dialog.show()
     }
@@ -59,6 +71,8 @@ class NumbersActivity : AppCompatActivity() {
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
+        view.bfImage.setImageResource(R.drawable.hand7)
+        view.bfText.text = "Yedi"
         dialog.setContentView(view)
         dialog.show()
     }
@@ -66,6 +80,8 @@ class NumbersActivity : AppCompatActivity() {
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
+        view.bfImage.setImageResource(R.drawable.hand8)
+        view.bfText.text = "Sekiz"
         dialog.setContentView(view)
         dialog.show()
     }
@@ -73,6 +89,8 @@ class NumbersActivity : AppCompatActivity() {
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
+        view.bfImage.setImageResource(R.drawable.hand9)
+        view.bfText.text = "Dokuz"
         dialog.setContentView(view)
         dialog.show()
     }
@@ -80,6 +98,8 @@ class NumbersActivity : AppCompatActivity() {
 
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment, null)
+        view.bfImage.setImageResource(R.drawable.hand10)
+        view.bfText.text = "On"
         dialog.setContentView(view)
         dialog.show()
     }

@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".ColorActivity">
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="402dp"
+        android:layout_height="601dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
-        android:background="#6A6868"
+        android:background="#2E2D2D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,6 +39,7 @@
             android:backgroundTint="@color/black"
             android:onClick="goToBlack"
             android:text="Siyah"
+            android:textColor="#FFFFFF"
             android:textStyle="bold"
             app:layout_column="0"
             app:layout_row="0" />

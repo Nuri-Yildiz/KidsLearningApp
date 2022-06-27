@@ -47,7 +47,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/livestock" />
+        app:srcCompat="@drawable/questionmark" />
 
     <ImageView
         android:id="@+id/imageView4"

@@ -12,7 +12,7 @@ class ColorTestActivity : AppCompatActivity() {
 
 
         var random = (0..5).random()
-        val colorSelector = arrayOf("Black","White","Yellow","Blue","Red","Green")
+        val colorSelector = arrayOf("Siyah","Beyaz","Sarı","Mavi","Kırmızı","Yeşil")
         val colors : ArrayList<String> = arrayListOf(colorSelector[random])
         val start = findViewById<Button>(R.id.startBtn)
         val activitiesArray = arrayOf(Green::class.java, Black::class.java , Yellow::class.java, White::class.java , Blue::class.java, Red::class.java)

@@ -19,6 +19,7 @@
             android:layout_width="174dp"
             android:layout_height="180dp"
             android:layout_marginTop="52dp"
+            android:onClick="openDescribe3"
             app:layout_constraintTop_toBottomOf="@+id/imageView5"
             app:srcCompat="@drawable/number3"
             tools:layout_editor_absoluteX="-2dp" />
@@ -37,6 +38,7 @@
             android:layout_width="162dp"
             android:layout_height="220dp"
             android:layout_marginStart="64dp"
+            android:onClick="openDescribe2"
             app:layout_constraintStart_toEndOf="@+id/imageView5"
             app:srcCompat="@drawable/number2"
             tools:layout_editor_absoluteY="0dp" />
@@ -47,6 +49,7 @@
             android:layout_height="181dp"
             android:layout_marginStart="60dp"
             android:layout_marginTop="56dp"
+            android:onClick="openDescribe4"
             app:layout_constraintStart_toEndOf="@+id/imageView10"
             app:layout_constraintTop_toBottomOf="@+id/imageView9"
             app:srcCompat="@drawable/number4" />
@@ -56,6 +59,7 @@
             android:layout_width="174dp"
             android:layout_height="210dp"
             android:layout_marginTop="36dp"
+            android:onClick="openDescribe5"
             app:layout_constraintTop_toBottomOf="@+id/imageView10"
             app:srcCompat="@drawable/number5"
             tools:layout_editor_absoluteX="-2dp" />
@@ -66,6 +70,7 @@
             android:layout_height="212dp"
             android:layout_marginStart="60dp"
             android:layout_marginTop="44dp"
+            android:onClick="openDescribe6"
             app:layout_constraintStart_toEndOf="@+id/imageView12"
             app:layout_constraintTop_toBottomOf="@+id/imageView11"
             app:srcCompat="@drawable/number6" />
@@ -75,6 +80,7 @@
             android:layout_width="177dp"
             android:layout_height="244dp"
             android:layout_marginTop="12dp"
+            android:onClick="openDescribe7"
             app:layout_constraintTop_toBottomOf="@+id/imageView12"
             app:srcCompat="@drawable/number7"
             tools:layout_editor_absoluteX="0dp" />
@@ -85,6 +91,7 @@
             android:layout_height="203dp"
             android:layout_marginStart="52dp"
             android:layout_marginTop="48dp"
+            android:onClick="openDescribe8"
             app:layout_constraintStart_toEndOf="@+id/imageView14"
             app:layout_constraintTop_toBottomOf="@+id/imageView13"
             app:srcCompat="@drawable/number8" />
@@ -94,6 +101,7 @@
             android:layout_width="172dp"
             android:layout_height="235dp"
             android:layout_marginTop="40dp"
+            android:onClick="openDescribe9"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView14"
             app:srcCompat="@drawable/number9"
@@ -105,6 +113,7 @@
             android:layout_height="216dp"
             android:layout_marginStart="52dp"
             android:layout_marginTop="44dp"
+            android:onClick="openDescribe10"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView16"
             app:layout_constraintTop_toBottomOf="@+id/imageView15"
