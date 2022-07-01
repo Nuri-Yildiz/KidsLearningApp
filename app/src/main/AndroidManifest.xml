@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsLearningApp">
         <activity
+            android:name=".AlphabetGame"
+            android:exported="false" />
+        <activity
             android:name=".BigNumberGame"
             android:exported="false" />
         <activity

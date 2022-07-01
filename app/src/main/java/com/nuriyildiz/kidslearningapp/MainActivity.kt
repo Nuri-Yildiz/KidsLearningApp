@@ -40,6 +40,10 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(applicationContext,ColorTestActivity::class.java)
         startActivity(intent)
     }
+    fun goToNumberGame(view: View){
+        val intent = Intent(applicationContext,BigNumberGame::class.java)
+        startActivity(intent)
+    }
 
 
 }

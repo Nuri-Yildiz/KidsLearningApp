@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue"
+    tools:context=".AlphabetGame">
+
+    <TextView
+        android:id="@+id/numguessgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundcorner"
+        android:padding="10dp"
+        android:text="Harf Oyunu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pickbignum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/roundcorner"
+        android:outlineProvider="paddedBounds"
+        android:padding="10dp"
+        android:text="''?'' Yerine Hangi Harf Gelmelidir ?"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numguessgame" />
+
+    <TextView
+        android:id="@+id/letterText1"
+        android:layout_width="100dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/roundcorner"
+        android:text="A"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="78sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <TextView
+        android:id="@+id/letterText2"
+        android:layout_width="100dp"
+        android:layout_height="107dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/roundcorner"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="78sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451" />
+
+    <TextView
+        android:id="@+id/btnRight2"
+        android:layout_width="100dp"
+        android:layout_height="107dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/roundcorner"
+        android:text="?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="78sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/letterText2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/letterText1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451" />
+
+    <Button
+        android:id="@+id/greenBtn"
+        android:layout_width="145dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="28dp"
+        android:background="#454B1B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.742" />
+
+    <Button
+        android:id="@+id/greenBtn2"
+        android:layout_width="145dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greenBtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/greenBtn3"
+        android:layout_width="145dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#ffff00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/greenBtn2"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whiteBtn"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <Button
+        android:id="@+id/whiteBtn"
+        android:layout_width="145dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="40dp"
+        android:background="@color/BrightBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/greenBtn"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

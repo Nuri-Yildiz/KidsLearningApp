@@ -11,7 +11,7 @@ class BigNumberGame : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_big_number_game)
-        /*
+
         assignNumbersToButtons()
         btnLeft.setOnClickListener {
 //            code here will run everytime the left button in clicked
@@ -53,5 +53,5 @@ class BigNumberGame : AppCompatActivity() {
         btnLeft.text = leftnum.toString()
         btnRight.text = rightNum.toString()
     }
-*/
-}}
+
+}
