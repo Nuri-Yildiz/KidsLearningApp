@@ -44,6 +44,10 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(applicationContext,BigNumberGame::class.java)
         startActivity(intent)
     }
+    fun goToAlphabetGame(view: View){
+        val intent = Intent(applicationContext,AlphabetGame::class.java)
+        startActivity(intent)
+    }
 
 
 }

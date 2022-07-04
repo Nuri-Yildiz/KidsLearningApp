@@ -95,7 +95,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="139dp"
         android:layout_marginBottom="6dp"
-        android:onClick="returnQuizPage"
+        android:onClick="goToAlphabetGame"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView7"
         app:layout_constraintStart_toStartOf="parent"
