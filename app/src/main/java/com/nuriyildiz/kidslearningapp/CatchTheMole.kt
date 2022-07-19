@@ -40,7 +40,7 @@ class CatchTheMole : AppCompatActivity() {
         object : CountDownTimer(15500,1000){
             override fun onFinish() {
 
-                timeText.text = "Kalan Süre 0"
+                timeText.text = "Süre Bitti"
 
                 handler.removeCallbacks(runnable)
 

@@ -1,5 +1,6 @@
 package com.nuriyildiz.kidslearningapp
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,21 +9,22 @@ import kotlinx.android.synthetic.main.activity_big_number_game.*
 import java.util.*
 
 class BigNumberGame : AppCompatActivity() {
+    var score = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_big_number_game)
 
         assignNumbersToButtons()
         btnLeft.setOnClickListener {
-//            code here will run everytime the left button in clicked
+
             checkAnswer(isLeftButtonSelected = true)
             assignNumbersToButtons()
         }
 
         btnRight.setOnClickListener {
-//            1. Compare the numbers in the boxes
+
             checkAnswer(isLeftButtonSelected = false)
-//            2. Pick new random numbers
+
             assignNumbersToButtons()
         }
     }
@@ -32,15 +34,17 @@ class BigNumberGame : AppCompatActivity() {
         val rightNum: Int = btnRight.text.toString().toInt()
         val isAnswerCorrect = if(isLeftButtonSelected)leftNum > rightNum else rightNum > leftNum
         if (isAnswerCorrect){
-//                Correct answer!!
-//                Change the background color
             backgroundView.setBackgroundColor(Color.CYAN)
-//                Show a toast
-            Toast.makeText(this, "CORRECT!!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Doğru!!", Toast.LENGTH_SHORT).show()
+            score++
         }else{
-//                Wrong answer!!
+
             backgroundView.setBackgroundColor(Color.RED)
-            Toast.makeText(this, "WRONG!!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Yanlış!!", Toast.LENGTH_SHORT).show()
+            intent.putExtra("score", score)
+            intent = Intent(applicationContext,EndGame::class.java)
+            startActivity(intent)
+
         }
     }
 

@@ -31,7 +31,7 @@
         android:background="@drawable/roundcorner"
         android:outlineProvider="paddedBounds"
         android:padding="10dp"
-        android:text="Büyük Olan Rakamı Seçin."
+        android:text="Büyük Olan Sayıyı Seçin."
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

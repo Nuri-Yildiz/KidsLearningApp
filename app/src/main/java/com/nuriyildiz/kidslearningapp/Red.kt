@@ -31,7 +31,7 @@ class Red : AppCompatActivity() {
         scoreText.text = score.toString()
 
         if(score != count){
-            val temp = "Renk: " + (count + 1) + ". Renk "
+            val temp = "Renk: " + (count + 1)+"." + "Renk "
             title.text = temp
         } else {
             val temp = "Renk " + (colors?.get(count) ?: String)

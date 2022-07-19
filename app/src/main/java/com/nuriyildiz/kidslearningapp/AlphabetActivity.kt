@@ -27,6 +27,7 @@ class AlphabetActivity : AppCompatActivity() {
         dialog.setContentView(view)
         dialog.show()
     }
+
     fun openLetterB(view: View){
         val dialog = BottomSheetDialog(this)
         val view = layoutInflater.inflate(R.layout.bottom_sheet_fragment2, null)
